@@ -1,2 +1,2 @@
 # videojuego
-Como muchos ya sabéis, hemos hecho un "videojuego" con processing que puedes controlar con un acelerometro conectado a un arduino.
+Como muchos ya sabéis, hemos hecho un "videojuego" con processing que puedes controlar con un acelerometro conectado a un arduino. Ahora mismo hay dos pruebas hechas más el codigo para leer desde el arduino los datos del acelerometro. La idea es que quien quiera pueda ir mejorando, añadiendo o modificando cosas, ya que mis conocimientos del processing y de java en general son muy escasos.

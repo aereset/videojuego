@@ -36,11 +36,15 @@ boolean dibujobola = false; //para ver si debo pintar la bola
 
 //dibujo del cilindro central
 void dibujasuelo(){
-  background(0,0,0);
+  background(240,250,255);
   noFill(); //ninguna con relleno
-  stroke(0,255,0); //ahora son todas verdes
+  stroke(0,0,0); //ahora son todas negras
+  strokeWeight(3);//ancho de linea de 8 pixeles
   line(200, 0, 200, 700);
   line(800, 0, 800, 700);
+  strokeWeight(1);//ancho de linea de 8 pixeles
+  line(400, 0, 400, 700);
+  line(600, 0, 600, 700);
 
 }
 
@@ -62,13 +66,15 @@ if (lineay >690){
 
 void dibujabolita(int linea1x, int linea2x, int lineay){
     noFill(); //relleno
-    stroke(0,255,0); //ahora son todas verdes
+    strokeWeight(10);//ancho de linea de 8 pixeles
+    strokeCap(SQUARE);
+    stroke(250,0,0); //ahora son todas verdes
     line(200, lineay, linea1x, lineay);
     line(linea2x, lineay,800,lineay);
     }
     
 void dibujapersona(int pos_personax){
-  fill(0,255,0);
+  fill(0,000,0);
   quad(float(pos_personax-25),650.0,float(pos_personax+25),650.0,float(pos_personax),600.0,float(pos_personax),600.0);
 }
 //aqui empiezan las funciones de dibujar texto
@@ -76,9 +82,9 @@ void dibujapersona(int pos_personax){
 void dibujanombre(){
   PFont myFont = createFont("minecraft.ttf", 24);
   textFont(myFont);
-  fill(255,255,255);
+  fill(0,0,0);
   switch (puntuacion){
-    case 0:  text("Enserio? repite...",500,200);
+    case 0:  text("En serio? repite...",500,200);
     break;
     case 10: text("mmm... Esto no es lo tuyo",500,200);
     break;
@@ -88,7 +94,7 @@ void dibujanombre(){
     break;
     case 40: text("Hay gente peor que tu, tranquilo",500,200);
     break;
-    case 50: text("loser",500,200);
+    case 50: text("Tu madre es calva",500,200);
     break;
     case 60: text("No esta mal, para ti...",500,200);
     break;
@@ -96,7 +102,7 @@ void dibujanombre(){
     break;
     case 80: text("GENIAL! Es broma, pesimo...",500,200);
     break;
-    case 90: text("Not bad",500,200);
+    case 90: text("Eres adoptado",500,200);
     break;
     case 100: text("Medio, te libras de ser loser.",500,200);
     break;
@@ -118,20 +124,20 @@ void dibujanombre(){
     break;
     case 190: text("A una puerta te has quedado",500,200);
     break;
-    default: text("GANASTE",500,200);
+    default: text("GANASTE (pero eres feo)",500,200);
   }
 }
 
 void dibujapuntuacion(){
   textFont(myFont);
-  fill(255,255,255);
+  fill(0,0,0);
   text(puntuacion, 900, 100);
 }
 
 
 void dibujacuentatras(){
   textFont(myFont);
-  fill(255,255,255);
+  fill(0,0,0);
   if(tiempo >= millis()-1000)
    text("3.", 500, 250);
   else if(tiempo >= millis()-2000)
@@ -148,10 +154,10 @@ void dibujainstrucciones(){
   PFont myFont = createFont("minecraft.ttf", 24);
   textFont(myFont);
   textAlign(CENTER, CENTER);
-  text("hola.", width/2, 200);
+  text("Hola.", width/2, 200);
   text("Pasa por las puertas sin tocar.", 500, 250);
   text("Si te inclinas hacia los lados controlas la nave.", 500, 300);
-  text("consigue la max puntuacion", 500, 350);
+  text("Consigue la max puntuacion", 500, 350);
   text("Pulsa la E para continuar.", 500, 450);
 }
 

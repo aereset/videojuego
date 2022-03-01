@@ -1,7 +1,7 @@
 # videojuego
 Como muchos ya sabéis, hemos hecho un "videojuego" con processing que puedes controlar con un acelerometro conectado a un arduino. Ahora mismo hay dos pruebas hechas más el codigo para leer desde el arduino los datos del acelerometro. La idea es que quien quiera pueda ir mejorando, añadiendo o modificando cosas, ya que mis conocimientos del processing y de java en general son muy escasos.
 
-#Para correrlo
+# Para correrlo
 
 	Abrir la carpeta «Hoverboard»
 	Subir a la placa de arduino el código que hay en la carpeta «pruebaskate» dentro de la carpeta «pruebaskate2» dentro de la carpeta «videojuego-master»

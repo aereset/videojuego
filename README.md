@@ -13,7 +13,8 @@ Run processing app.
 
 Desde la app de processing abrir el «pruebaskate2» que se encuentra nada más abrir la carpeta de «pruebaskate2» y hacer run, es el juego ya, esperas unos segundos a que se estabilicen las lecturas de la IMU y ¡JUGAR!
 
-Nota:
+** Nota: **
+
 A lo mejor no funciona el port porque cambia en vuestro ordenador, teneis que solucionarlo a mano.
 
 En el código abierto en processing de «pruebaskate2» id a la fuinción de SETUP.
